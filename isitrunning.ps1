@@ -4,4 +4,7 @@ $theservice = Read-Host -Prompt 'Input your service name'
 #search for service
 $isitrunning = Get-Service -Name $theservice
 #output service is running or is not
-echo $isitrunning
+Write-Host "Service is" ($isitrunning.Status)
+
+
+
